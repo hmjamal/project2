@@ -1,0 +1,518 @@
+html{scroll-behavior: smooth;}
+
+*{      /*ati holo basic structure*/ 
+margin: 0;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+.container{
+        max-width: 1000px;
+        margin: auto;
+
+}
+
+ 
+/*nic a je sokol kaj golo kora holo segolo moloto css er jonno basic kaj ja project2 er mol kaj korar age kora holo  */
+
+
+/* font family
+
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+ 
+*/
+
+.row{width: 100%;} /* sm/md/large screen sobgolor jonno row 100% jaiga niba but 
+ 1ti row k different div e vag kora hove tai row k boraborer moto clear */ 
+
+.row::after{
+        clear: both;
+        content: '';
+        display: block;
+
+
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px; /* 1ta row k 12 ti column e vag kore jotogolo size nea hoice sobgolo 1tir pase onnoti left er dik a jabe & 15px jaiga niba */
+
+
+}
+
+
+
+[class*="col-"]{
+width: 100%;   /*ei class dara bojano holo je nic a joto golo device er jonno column define kora hoice segolo + jekono prokerer small device er jonno screen 100% nea niba */
+}
+
+
+
+
+/*header starts here (1st a small screen er jonno design kora hoice*/
+
+header{
+    background-color: rgb(122, 194, 194);
+    padding: 0% 1%;
+    text-align: center;
+
+}
+
+ .logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color:aliceblue;
+    text-align: center;
+    border-radius: 50%;
+    border:2px solid white;
+
+ }
+
+
+nav ul li{
+        display: block;
+
+}
+
+nav ul li a{
+        display: block;
+        text-decoration: none;
+        color: aliceblue;
+        line-height: 70px;
+        padding: 0 20px;
+        text-decoration: none;
+        font-size: 0.9rem;
+
+}
+
+
+nav ul li a:hover{
+            border-radius: 10px;
+            background-color: darkcyan;
+
+}
+
+
+/*header ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*banner starts here*/
+
+#banner-section{
+        background-image: url("food images/restaurent.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+}
+
+
+.banner-contents{
+            padding: 50px 10px;
+            text-align: center;
+
+}
+
+
+.banner-contents h1{
+            width: 100%;
+            margin: 15px auto;
+            font-size: 3rem;
+            background:rgb(69, 223, 215);
+            border-radius: 10px;
+            padding: 10px; /*bitorer lika golo 10p aro bitore asbe */
+            font-family: 'Handlee', cursive;
+
+}
+
+
+
+.banner-contents p{
+            width: 300px;
+            margin: 15px auto;
+            background-color: rgb(94, 187, 156);
+            color: aliceblue;
+            padding: 10px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+
+}
+
+
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border:none;
+    border-radius: 5px;
+    background: rgb(75, 146, 179);
+    transition: .5s;
+    text-transform: uppercase;
+    color: aliceblue;
+
+}
+
+
+.btn:hover{transform: scale(1.2);}
+
+/*banner ends here*/
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+/*about starts here */
+ 
+#about-us{padding: 1%;}
+
+.about-us-contents{text-align: center;}
+
+.about-us-contents h3{
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: bolder;
+
+}
+
+.about-us-contents p{
+            font-size: 1rem;
+            margin-bottom: 10px;
+
+}
+
+/*about ends here */
+
+
+
+
+
+
+/*food-menu starts here */
+
+#menu-section{padding: 1%;}
+
+.card-body{text-align: center;}
+
+.card-body img{
+            max-width: 100%;
+            height: auto;
+            display: block;/* img & desc er modde je blank ta take ota remove korar jonno disply =block dea hoi */  
+
+}
+
+.item-desc{background-color: burlywood;}
+
+.item-name{
+        background: rgb(34, 233, 173);
+        color: aliceblue;
+        padding: 10px;
+
+}
+
+ .item-desc > p{ /* item desc er under e je p golo ache segolok child/descendent selector bole */
+            font-size: 0.8rem;
+            padding: 10px;
+            font-weight: bolder;
+
+ }
+
+
+.card{transition: 1s;} /* 1 second porjonto transition/boro hove */
+
+
+.card:hover{transform: scale(1.1);}
+
+
+
+/*food-menu ends here */
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+/*contact starts here */
+#contact{
+        padding: 1%;
+        background: rgb(47, 148, 243);
+
+}
+
+.map{width: 100%;
+    height:250px;
+}
+
+
+.contact-details{
+            color: rgb(13, 21, 29);
+            text-align: center;
+            padding: 20px;
+
+}
+
+.contact-details p, address{font-size: 0.8rem;}
+
+
+
+/*contact ends here */
+
+
+
+
+
+
+
+
+
+
+
+/*footer starts here*/
+footer{
+    padding: 1%;
+    color: aliceblue;
+    background-color: aquamarine;
+
+}
+
+footer p{
+        line-height: 32px;
+        font-size: 0.8rem;
+        text-align: center;
+
+}
+
+.social-menus{text-align: center;}
+
+
+.icon-style{
+ color:rgb(35, 197, 103); 
+ width: 32px;
+ height: 32px;
+ line-height: 32px;
+ border-radius: 50%;
+ border: 1px solid rgb(252, 250, 250);
+ transition: 0.4s;  
+ text-align: center;     
+
+}
+
+
+.icon-style:hover{
+            background-color: cadetblue;
+            transform: scale(1.2);      
+
+}
+
+
+
+
+
+
+
+/*footer ends here*/
+
+
+
+
+
+
+/*small device (portrait tablets and large phone 576px and up hobe tokon ...*/
+@media(min-width: 576px){
+
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+
+}
+
+
+/*medium device (portrait tablets and large phone 768px and up hole tokon ...*/
+@media(min-width: 768px){
+
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+}
+
+
+
+
+
+/*large device (portrait tablets and large phone 992px and up hole tokon ...*/
+@media(min-width: 992px){
+
+        /*header starts here*/
+
+
+
+    .logo-div{text-align: left;}
+
+    nav ul{text-align: right;}
+
+    nav ul li{display: inline-block;} /*i b debar karone items golo 1 line a sole asce */
+
+     nav ul li a{display: inline-block;
+                transition: .4s;
+                font-size: 1.5rem;
+        }
+
+    nav ul li a:hover{
+                background-color: transparent;/* bg color dekavena */
+                transform: scale(1.2);
+                text-decoration: underline; 
+                border-radius: 0;
+                font-size: 1.5rem;
+    }
+
+    
+                 /*header ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 /*banner starts here */
+
+#banner-section{
+                position: relative; /*sob content center a nea asar jonno p=r kora holo & .banner-content=abs kora holo . coz b s er modde sob text chilo */
+                height: 100vh;
+
+}
+
+
+.banner-contents{  /*kono content k p=abs kole top+left+pransform=3ti property always use korte hove */
+                position: absolute;
+                top:50%; /* content golo banner-contents arear top tek 50% nic a neme asbe,r left er dik a 50% sore asbe */
+                left:50%;
+                transform: translate(-50%, -50%);
+
+}
+
+.banner-contents h1{   /*abar alada alada vabe design kora holo */
+                width: 700px;
+                font-size: 3.5rem;
+
+}
+
+
+.banner-contents p{
+        width: 500px;
+        font-size: 2rem;
+
+}
+
+                 /*banner ends here */
+
+
+
+
+
+
+
+
+        /*footer starts here */
+
+footer p{text-align: left;
+        color: black;
+        font-size: 1rem;
+
+}
+
+.social-menus{text-align: right;}
+
+
+         /*footer ends here */
+
+
+
+
+
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+
+}
+
+ 
+
+   
+
+
+
+
+
+
+
+
+
